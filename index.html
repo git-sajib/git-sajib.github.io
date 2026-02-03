@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+
+███████╗ █████╗ ███╗   ███╗██╗██╗   ██╗██╗     
+██╔════╝██╔══██╗████╗ ████║██║██║   ██║██║     
+███████╗███████║██╔████╔██║██║██║   ██║██║     
+╚════██║██╔══██║██║╚██╔╝██║██║██║   ██║██║     
+███████║██║  ██║██║ ╚═╝ ██║██║╚██████╔╝███████╗
+╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝ ╚═════╝ ╚══════╝
+                                                 
+██╗███████╗██╗      █████╗ ███╗   ███╗          
+██║██╔════╝██║     ██╔══██╗████╗ ████║          
+██║███████╗██║     ███████║██╔████╔██║          
+██║╚════██║██║     ██╔══██║██║╚██╔╝██║          
+██║███████║███████╗██║  ██║██║ ╚═╝ ██║          
+╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝          
+
+███████╗ █████╗      ██╗██╗██████╗ 
+██╔════╝██╔══██╗     ██║██║██╔══██╗
+███████╗███████║     ██║██║██████╔╝
+╚════██║██╔══██║██   ██║██║██╔══██╗
+███████║██║  ██║╚█████╔╝██║██████╔╝
+╚══════╝╚═╝  ╚═╝ ╚════╝ ╚═╝╚═════╝ 
+
+What are you doing here?! You sneaky developer...👨‍💻
+
+-->
+
+<head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+
+  <meta name="google-site-verification" content="" />
+
+
+
+  <!--JSON-LD structured -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Samiul Islam Sajib",
+    "jobTitle": "Software Engineer & Full Stack Web Developer",
+    "url": "https://samiulislamsajib.com",
+    "image": "https://github.com/git-sajib/personal/blob/main/Samiul%20Islam%20Sajib%20Formal.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/linked-sajib",
+      "https://github.com/git-sajib"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Bangladesh University of Professionals"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "TEXAGIG-IT"
+    },
+    "description": "Samiul Islam Sajib is a top-rated Software Engineer specializing in Web application & software app development, based in Bangladesh."
+  }
+  </script>
+  <!--JSON-LD structured -->
+
+
+  <!-- Google Tag Manager -->
+
+  <!-- End Google Tag Manager -->
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+
+  <meta name="description"
+    content="Samiul Islam Sajib – Portfolio website showcasing web development, software projects, and professional experience." />
+  <meta name="author" content="Samiul Islam Sajib" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Samiul | Portfolio" />
+  <meta property="og:description"
+    content="Official portfolio of Samiul Islam Sajib, featuring web/software development projects, skills, and experience." />
+  <meta property="og:site_name" content="Samiul Islam Sajib Portfolio" />
+  <meta property="og:type" content="website" />
+
+
+  <title>Samiul Islam Sajib | Software Engineer</title>
+  <link rel="icon" type="image/x-icon" href="src/ico/samiulisalmsajib-logo.ico" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body">
+  <!-- Google Tag Manager (noscript) -->
+
+  <!-- End Google Tag Manager (noscript) -->
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="Samiul Islam Sajib logo">
+        <div class="logo-top">
+          <img src="src/png/samiulisalmsajib-logo.png" alt="animation-head" id="nav-avatar" />
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+
+          <li class="navbar-tabs-li contact getintouch-heading" data-aos="fade-down" data-aos-delay="700">
+            <a href="#contact" aria-label="contact menu button">
+              &#60;/Contact&#62;
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+        <li id="contact-mobile-tab" class="mobile-navbar-tabs-li contact getintouch-heading" onclick="hidemenubyli()">
+          <a href="#contact" tabindex="0" aria-label="contact menu button">
+            &#60;/Contact&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">H</p>
+          <p class="jello">e</p>
+          <p class="jello">y</p>
+          <p class="jello">,</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">S</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          <p class="jello">i</p>
+          <p class="jello">u</p>
+          <p class="jello">l</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">s</p>
+          <p class="jello">l</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          &nbsp;
+          <p class="jello">S</p>
+          <p class="jello">a</p>
+          <p class="jello">j</p>
+          <p class="jello">i</p>
+          <p class="jello">b</p>
+        </article>
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">F</p>
+            <p class="jello">u</p>
+            <p class="jello">l</p>
+            <p class="jello">l</p>
+            &nbsp;
+            <p class="jello">S</p>
+            <p class="jello">t</p>
+            <p class="jello">a</p>
+            <p class="jello">c</p>
+            <p class="jello">k</p>
+            &nbsp;
+            <p class="jello">W</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+          </div>
+
+          <div>
+            <p class="jello">D</p>
+            <p class="jello">e</p>
+            <p class="jello">v</p>
+            <p class="jello">e</p>
+            <p class="jello">l</p>
+            <p class="jello">o</p>
+            <p class="jello">p</p>
+            <p class="jello">e</p>
+            <p class="jello">r</p>
+          </div>
+
+          <div>
+            <p class="jello">&amp;&nbsp;</p>
+            <p class="jello">S</p>
+            <p class="jello">o</p>
+            <p class="jello">f</p>
+            <p class="jello">t</p>
+            <p class="jello">w</p>
+            <p class="jello">a</p>
+            <p class="jello">r</p>
+            <p class="jello">e</p>
+          </div>
+
+          <div>
+            <p class="jello">E</p>
+            <p class="jello">n</p>
+            <p class="jello">g</p>
+            <p class="jello">i</p>
+            <p class="jello">n</p>
+            <p class="jello">e</p>
+            <p class="jello">e</p>
+            <p class="jello">r.</p>
+          </div>
+
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Since beginning my journey as a Web Application Development 5+ years ago, I've done remote work for agencies,
+          consulted for startups, and collaborated with talented people to create digital products for both business and
+          consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops.
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="https://wa.me/8801714845488" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+
+              I am a Full Stack Web Developer & Software Engineer passionate about building dynamic, responsive, and
+              scalable web applications and software solutions.<br>
+              Skilled in <strong>front-end</strong> (HTML, CSS, JavaScript, React, Vue) and <strong>back-end</strong>
+              (Python, Django, Node.js, Laravel) development.<br>
+              I specialize in creating <strong>custom-coded websites</strong> using <strong>React</strong>,
+              <strong>Next.js</strong>, and modern <strong>CMS</strong> platforms.<br>
+              I thrive on solving complex problems and delivering efficient, end-to-end digital solutions tailored to
+              client needs.
+              <br><br>
+              Let’s create extraordinary solutions together!
+            </p>
+            <br />
+
+            <!-- Resume button -->
+            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+              <div class="sign">
+                <svg viewBox="0 0 640 512">
+                  <path
+                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                </svg>
+              </div>
+
+              <div class="text">Resume</div>
+            </button>
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/png/samiulisalmsajib-logo.png" alt="Samiul Islam Sajib" tabindex="0"
+              aria-label="image of Samiul Islam Sajib" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/React.png" alt="react Skill" class="tech-stack-logo" />
+              <span class="tooltip">React JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Next.js.png" alt="next Skill" class="tech-stack-logo" />
+              <span class="tooltip">Next JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Vue.js.png" alt="vue skill" class="tech-stack-logo" />
+              <span class="tooltip">Vue JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/TypeScript.png" alt="typescript skill" class="tech-stack-logo" />
+              <span class="tooltip">TypeScript</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Laravel.png" alt="laravel skill" class="tech-stack-logo" />
+              <span class="tooltip">Laravel</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Node.js.png" alt="node js skill" class="tech-stack-logo" />
+              <span class="tooltip">Node JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/MySQL.png" alt="mysql db skill" class="tech-stack-logo" />
+              <span class="tooltip">MySQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/PostgresSQL.png" alt="postgressql db skill" class="tech-stack-logo" />
+              <span class="tooltip">PostgresSQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/firebase.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">Firebase</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/android.png" alt="android studio skill" class="tech-stack-logo" />
+              <span class="tooltip">Android Studio</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/kotlin.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">Kotlin</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/django.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">Django</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/python.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">Python</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">HTML</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">Bootstrap</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Tailwind CSS.png" alt="tailwind css skill" class="tech-stack-logo" />
+              <span class="tooltip">Tailwind CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Sass.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">Sass</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/visual_studio.png" alt="Flutter Skill" class="tech-stack-logo" />
+              <span class="tooltip">Visual Studio</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/java.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">Java</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
+              <span class="tooltip">C</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
+              <span class="tooltip">C++</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/c-sharp.png" alt="c# language skill" class="tech-stack-logo" />
+              <span class="tooltip">C#</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Postman.png" alt="postman api skill" class="tech-stack-logo" />
+              <span class="tooltip">Postman</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/google_map.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">Google Map</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">Github</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">Git</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/pslogo.png" alt="photoshop skill" class="tech-stack-logo" />
+              <span class="tooltip">Adobe PS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Adobe Illustrator.png" alt="Illustrator skill" class="tech-stack-logo" />
+              <span class="tooltip">Adobe Illustrator</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
+              <span class="tooltip">Figma</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Behance.png" alt="behance skill" class="tech-stack-logo" />
+              <span class="tooltip">Behance</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/wordpress.png" alt="wordpress cms skill" class="tech-stack-logo" />
+              <span class="tooltip">WordPress</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/webflow.png" alt="webflow cms skill" class="tech-stack-logo" />
+              <span class="tooltip">Webflow</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
+        </div>
+        <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+          aria-label="As a developer these are the skills i have">
+          My Past Projects
+        </h3>
+        <div class="project-boxes-div">
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <!-- <img src="src/ico/" alt="" class="faviconforProject" /> -->
+
+                <article class="ProjectHeading">TS Tour Travel</article>
+
+                <p class="ProjectDescription">TS Tour Travel is a Malaysia-based travel agency specializing in student
+                  admissions, tourist visa processing etc. This web application is built with React and Next.js</p>
+                <div class="project-buttons">
+                  <a href="https://tstourtravels.com" target="_blank">
+                    <img src="src/svg/web_icon.svg" alt="Web link" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <a href="https://tstourtravels.com/" target="_blank">
+                  <img src="src/webp/tstourtravels.webp" alt="TS Tour Travel Web" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <!-- <img src="src/ico/" alt="" class="faviconforProject" /> -->
+
+                <article class="ProjectHeading">Saba Halal Food</article>
+
+                <p class="ProjectDescription">Saba Halal Food is a Japanese halal grocery shop selling Bangladeshi food
+                  items. This website is built with WordPress and includes a functional shopping cart for a smooth
+                  experience.</p>
+                <div class="project-buttons">
+                  <a href="https://sabahalalfoods.com" target="_blank">
+                    <img src="src/svg/web_icon.svg" alt="Web link" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <a href="https://sabahalalfoods.com/" target="_blank">
+                  <img src="src/webp/sabahalalfood.webp" alt="Saba Halal Food Web" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <!-- <img src="src/ico/" alt="" class="faviconforProject" /> -->
+
+                <article class="ProjectHeading">Giftology SF</article>
+
+                <p class="ProjectDescription">
+                  Giftology SF is a USA-based gift item shop selling curated gifts. This website is built with custom
+                  code and WordPress CMS and includes subscription features and email marketing automation for a smooth
+                  experience.</p>
+                <div class="project-buttons">
+                  <a href="https://giftologysf.com" target="_blank">
+                    <img src="src/svg/web_icon.svg" alt="Web link" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <a href="https://giftologysf.com" target="_blank">
+                  <img src="src/webp/giftologysf.webp" alt="Giftologysf Web" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <!-- <img src="src/ico/" alt="" class="faviconforProject" /> -->
+
+                <article class="ProjectHeading">CEO Portfolio</article>
+
+                <p class="ProjectDescription">
+                  As a founder of Texagig-IT this is my another portfolio website showcasing my role as a founder and
+                  ceo. This website is built with Laravel, Vue, and Inertia.js for a modern and seamless experience.</p>
+                <div class="project-buttons">
+                  <a href="https://ceo.texagig.com" target="_blank">
+                    <img src="src/svg/web_icon.svg" alt="Web link" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <a href="https://ceo.texagig.com" target="_blank">
+                  <img src="src/webp/ceotexagig.webp" alt="CEO Texagig-IT Web" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <!-- <img src="src/ico/firsttrip-logo.webp" alt="TS Tour Travel icon" class="faviconforProject" /> -->
+
+                <article class="ProjectHeading">Eventify</article>
+
+                <p class="ProjectDescription">
+                  An event management system web application dashboard built with PHP Laravel to
+                  manage events, publish events, register participants, and export event data filter-wise. Use the
+                  credentials below for testing purpose.<br><br> Username: samiul <br> password: admin123</p>
+                <div class="project-buttons">
+                  <a href="https://eventmanagement.texagig.com" target="_blank">
+                    <img src="src/svg/web_icon.svg" alt="Web link" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <a href="https://eventmanagement.texagig.com" target="_blank">
+                  <img src="src/webp/eventmanagement.webp" alt="Event Management Web" />
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Learning, Living, and Leveling Up! my quote">
+            Learning, Living, and Leveling Up!👨‍💻
+          </article>
+        </div>
+        <div class="social-media-container">
+          <section class="getintouch-heading" id="contact">
+            <article>GetinTouch();</article>
+          </section>
+          <div class="logos">
+
+            <a href="tel:+8801714845488" aria-label="Call" style="display:inline-flex;align-items:center;">
+              <svg viewBox="0 0 24 24" style="width:26px;height:26px;fill:#ffffff;">
+                <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24
+      1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20
+      c0 .55-.45 1-1 1C10.07 21 3 13.93 3 5
+      c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1
+      0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.01l-2.2 2.21z" />
+              </svg>
+            </a>
+
+
+            <a href="https://wa.me/8801714845488" target="_blank" aria-label="WhatsApp"
+              style="display:inline-flex;align-items:center;margin-left:14px;">
+              <svg viewBox="0 0 24 24" style="width:26px;height:26px;fill:#ffffff;">
+                <path d="M12 2a10 10 0 00-8.94 14.5L2 22l5.65-1.49
+      A10 10 0 1012 2zm0 2a8 8 0 017.75 10.2
+      7.9 7.9 0 01-3.86 4.96 7.86 7.86 0 01-6.77.53
+      l-.38-.17-3.36.89.9-3.27-.2-.39
+      A7.96 7.96 0 0112 4z" />
+              </svg>
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/linked-sajib" target="_blank" aria-label="My Linkedin"><svg
+                class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="mailto:samiul.islam.unisel@gmail.com" target="_blank" aria-label="My Gmail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+
+            <a href="https://github.com/git-sajib" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+
+          </div>
+        </div>
+        <div class="footer-avatar-container">
+          <img src="src/png/samiulisalmsajib-logo.png" alt="animation-head" class="footer-avatar-img"
+            id="footer-wala-avatar" />
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <article>
+            &#169;2026. <a href="https://github.com/git-sajib"
+              style="color: antiquewhite; text-decoration: dotted;">Samiul Islam Sajib.</a> All rights reserved.
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/samiul_resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    // mouse move only for cursor position
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = posX + "px";
+      cursorInner.style.top = posY + "px";
+
+      cursorOuter.animate(
+        {
+          left: posX + "px",
+          top: posY + "px",
+        },
+        { duration: 500, fill: "forwards" }
+      );
+    });
+
+    // hover effects (ONLY ONCE)
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        cursorInner.classList.add("hover");
+        cursorOuter.classList.add("hover");
+      });
+
+      link.addEventListener("mouseleave", () => {
+        cursorInner.classList.remove("hover");
+        cursorOuter.classList.remove("hover");
+      });
+    });
+  </script>
+
+</body>
+
+</html>
